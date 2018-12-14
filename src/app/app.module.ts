@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { UsershelfComponent } from './usershelf/usershelf.component';
+import { BookshelfComponent } from './bookshelf/bookshelf.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainpageComponent,
-    UsershelfComponent
+    UsershelfComponent,
+    BookshelfComponent
   ],
   imports: [
     BrowserModule,
