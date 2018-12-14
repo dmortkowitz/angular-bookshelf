@@ -12,8 +12,11 @@ const appRoutes: Routes = [
   {
     path: 'usershelf',
     component: UsershelfComponent
+  },
+  {
+    path: 'submitbook',
+    component: SubmitbookComponent
   }
-
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
