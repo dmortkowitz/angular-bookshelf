@@ -44,6 +44,7 @@ _Welcome to my Angular build of my *Bookshelf* app (name and content, a work in 
 The user will want to download the Git Repository from the app's Github Repository.
 Once there, navigate to the unzipped project folder in
 ```
+> A note on installation: This project relies on a Firebase key, which is ignored upon Upload for security reasons. In order for you to install and properly run this application, you will need to acquire a key from Firebase, and create the appropriate api-keys.ts file in the *app* folder, with the correct export const masterFirebaseConfig at top, before the credentials. 
 ### Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
