@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { UsershelfComponent } from './usershelf/usershelf.component';
 import { SubmitbookComponent } from './submitbook/submitbook.component';
+import { BookdetailComponent } from './bookdetail/bookdetail.component';
 
 
 const appRoutes: Routes = [
@@ -18,6 +19,10 @@ const appRoutes: Routes = [
   {
     path: 'submitbook',
     component: SubmitbookComponent
+  },
+  {
+    path: 'books/:id',
+    component: BookdetailComponent
   }
 ];
 
