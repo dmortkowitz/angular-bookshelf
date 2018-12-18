@@ -1,19 +1,9 @@
-<h2>User Shelf</h2>
 
-  <div *ngFor="let book of books" class="card">
-    <div class="card-header" id="headingOne">
+
+  <div *ngFor="let book of books" (click)="goToDetailPage(book)"  class="card" id="shelfBody">
+    <div class="card-header">
       <h5 class="mb-0">
-        <div (click)="show = !show">{{show ? '':''}}
-          <h3><em>{{book.title}}</em> by {{book.author}}</h3>
-        </div>
+        <h3><em>{{book.title}}</em> by {{book.author}}</h3>
       </h5>
     </div>
-    <div>
-      <div *ngIf="show" class="card-body">
-        <h4><em>{{book.summary}}, {{book.id}}</em></h4>
-      </div>
-    </div>
   </div>
-
-
-  <!-- (click)="goToDetailPage(book)"  -->

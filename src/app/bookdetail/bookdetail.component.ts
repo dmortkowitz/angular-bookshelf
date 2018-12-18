@@ -2,18 +2,25 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Book } from '../book.model';
+import { BookService } from '../book.service';
+
 
 
 @Component({
   selector: 'app-bookdetail',
   templateUrl: './bookdetail.component.html',
-  styleUrls: ['./bookdetail.component.css']
+  styleUrls: ['./bookdetail.component.css'],
+  providers: [AlbumService]
 })
 
 export class BookdetailComponent implements OnInit {
   bookId: number = null;
 
-  constructor(private route: ActivatedRoute, private location: Location) {}
+  constructor(
+    private route: ActivatedRoute,
+    private location: Location,
+    private albumService: AlbumService
+  ) {}
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {

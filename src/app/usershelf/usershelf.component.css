@@ -4,7 +4,11 @@
 ul {
   list-style-type: none;
 }
-/* 
+
+#shelfBody {
+  text-align: center;
+}
+/*
 #bookBody {
   display: none;
 } */
