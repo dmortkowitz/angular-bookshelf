@@ -2,11 +2,19 @@
 
   <div *ngFor="let book of books | async"  class="card">
     <div class="card-header">
-      <h3 (click)="goToDetailPage(book)"><em>{{book.title}}</em> by {{book.author}}</h3>
-      <div *ngIf="currentRoute === '/user'">
+      <div *ngIf="currentRoute === '/'" (click)="goToDetailPage(book)">
+        <h3><em>{{book.title}}</em> by {{book.author}}</h3>
+      </div>
+      <div *ngIf="currentRoute === '/user'" data-toggle="collapse" href="#cardSummary" aria-expanded="true" aria-controls="cardSummary">
+        <h3><em>{{book.title}}</em> by {{book.author}}</h3>
+      </div>
+      <div  id="cardSummary" class="collapse">
         {{book.summary}}
         <hr />
         <app-edit-entry [selectedBook]="book"></app-edit-entry>
       </div>
     </div>
   </div>
+
+
+ (click)="goToDetailPage(book)"

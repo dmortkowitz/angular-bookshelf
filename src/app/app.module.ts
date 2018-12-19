@@ -16,6 +16,7 @@ import { AboutComponent } from './about/about.component';
 import { BookdetailComponent } from './bookdetail/bookdetail.component';
 import { UserComponent } from './user/user.component';
 import { EditEntryComponent } from './edit-entry/edit-entry.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 export const firebaseConfig = {
@@ -44,7 +45,8 @@ export const firebaseConfig = {
     HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
