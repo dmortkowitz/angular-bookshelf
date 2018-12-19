@@ -1,3 +1,10 @@
 
 
-<h5>This album has id number: {{bookId}}</h5>
+<div>
+  <div>
+    <h3>{{(bookToDisplay | async)?.title}}</h3>
+    <h4>{{(bookToDisplay | async)?.author}}</h4>
+    <p>{{(bookToDisplay | async)?.summary}}</p>
+  </div>
+</div>
+<a routerLink="/">Return Home</a>

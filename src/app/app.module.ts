@@ -14,6 +14,8 @@ import { BookshelfComponent } from './bookshelf/bookshelf.component';
 import { SubmitbookComponent } from './submitbook/submitbook.component';
 import { AboutComponent } from './about/about.component';
 import { BookdetailComponent } from './bookdetail/bookdetail.component';
+import { UserComponent } from './user/user.component';
+import { EditEntryComponent } from './edit-entry/edit-entry.component';
 
 
 export const firebaseConfig = {
@@ -32,7 +34,9 @@ export const firebaseConfig = {
     BookshelfComponent,
     SubmitbookComponent,
     AboutComponent,
-    BookdetailComponent
+    BookdetailComponent,
+    UserComponent,
+    EditEntryComponent
   ],
   imports: [
     BrowserModule,

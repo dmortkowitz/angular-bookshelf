@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Book } from '../book.model';
 import { Router } from '@angular/router';
 import { BookService } from '../book.service';
-
+import { FirebaseListObservable } from 'angularfire2/database';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-usershelf',
@@ -12,14 +13,16 @@ import { BookService } from '../book.service';
 })
 
 export class UsershelfComponent implements OnInit {
-  books: Book[];
+  books: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
+
   constructor(private router: Router, private bookService: BookService) {}
 
     ngOnInit() {
       this.books = this.bookService.getBooks();
   }
 
-  goToDetailPage(clickedBook: Book) {
-    this.router.navigate(['books', clickedBook.id]);
+  goToDetailPage(clickedBook) {
+    this.router.navigate(['books', clickedBook.$key]);
   };
 }

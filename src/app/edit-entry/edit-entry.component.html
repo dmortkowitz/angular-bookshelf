@@ -1,0 +1,16 @@
+<h4>Update Title</h4>
+
+<label>New Book Title:</label>
+<input [(ngModel)]="selectedBook.title">
+<br>
+
+<label>New Author:</label>
+<input [(ngModel)]="selectedBook.author">
+<br>
+
+<label>New Summary:</label>
+<input [(ngModel)]="selectedBook.summary">
+
+<button (click)="beginUpdatingBook(selectedBook)">Update</button>
+<hr />
+<button (click)="beginDeletingBook(selectedBook)">Delete</button>

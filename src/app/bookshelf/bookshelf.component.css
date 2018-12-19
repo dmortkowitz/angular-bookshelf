@@ -4,3 +4,12 @@ width: 100%;
 font-size: 30px;
 
 }
+
+#addBook{
+float: left;
+padding-left: 1%;
+}
+#editBook{
+  float: right;
+  padding-right: 1%;
+}

@@ -5,6 +5,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { UsershelfComponent } from './usershelf/usershelf.component';
 import { SubmitbookComponent } from './submitbook/submitbook.component';
 import { BookdetailComponent } from './bookdetail/bookdetail.component';
+import { UserComponent } from './user/user.component';
 
 
 const appRoutes: Routes = [
@@ -23,6 +24,10 @@ const appRoutes: Routes = [
   {
     path: 'books/:id',
     component: BookdetailComponent
+  },
+  {
+    path: 'user',
+    component: UserComponent
   }
 ];
 
