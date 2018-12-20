@@ -17,6 +17,7 @@ import { BookdetailComponent } from './bookdetail/bookdetail.component';
 import { UserComponent } from './user/user.component';
 import { EditEntryComponent } from './edit-entry/edit-entry.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 export const firebaseConfig = {
@@ -37,7 +38,8 @@ export const firebaseConfig = {
     AboutComponent,
     BookdetailComponent,
     UserComponent,
-    EditEntryComponent
+    EditEntryComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

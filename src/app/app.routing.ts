@@ -6,27 +6,32 @@ import { UsershelfComponent } from './usershelf/usershelf.component';
 import { SubmitbookComponent } from './submitbook/submitbook.component';
 import { BookdetailComponent } from './bookdetail/bookdetail.component';
 import { UserComponent } from './user/user.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 const appRoutes: Routes = [
   {
     path: '',
+    component: WelcomeComponent
+  },
+  {
+    path: 'members',
     component: MainpageComponent
   },
   {
-    path: 'usershelf',
+    path: 'members/usershelf',
     component: UsershelfComponent
   },
   {
-    path: 'submitbook',
+    path: 'members/submitbook',
     component: SubmitbookComponent
   },
   {
-    path: 'books/:id',
+    path: 'members/books/:id',
     component: BookdetailComponent
   },
   {
-    path: 'user',
+    path: 'members/user',
     component: UserComponent
   }
 ];

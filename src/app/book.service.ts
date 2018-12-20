@@ -24,7 +24,7 @@ export class BookService {
   }
 
   getBookById(bookId: string){
-    return this.database.object('books/' + bookId);
+    return this.database.object('/members/books/' + bookId);
   }
 
   updateBook(localUpdatedBook){
