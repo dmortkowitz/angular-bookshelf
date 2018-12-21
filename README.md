@@ -3,10 +3,10 @@
 _Welcome to my Angular build of my *Bookshelf* app (name and content, a work in progress). In this app, the user is able to store and review their reading collection, for independent or reading club purposes._
 
 ## Project MVP
-* Functional user interface
-* Connectivity to Firebase
-* Ability to store book submissions (Title, author, summary, number of pages)
-* Update books as completed
+* Functional user interface (functional)
+* Connectivity to Firebase (functional)
+* Ability to store book submissions (Title, author, summary, number of pages) (functional)
+* Update books as completed 
 
 ## Future Updates
 
@@ -44,7 +44,7 @@ _Welcome to my Angular build of my *Bookshelf* app (name and content, a work in 
 The user will want to download the Git Repository from the app's Github Repository.
 Once there, navigate to the unzipped project folder in
 ```
-> A note on installation: This project relies on a Firebase key, which is ignored upon Upload for security reasons. In order for you to install and properly run this application, you will need to acquire a key from Firebase, and create the appropriate api-keys.ts file in the *app* folder, with the correct export const masterFirebaseConfig at top, before the credentials. 
+> A note on installation: This project relies on a Firebase key, which is ignored upon Upload for security reasons. In order for you to install and properly run this application, you will need to acquire a key from Firebase, and create the appropriate api-keys.ts file in the *app* folder, with the correct export const masterFirebaseConfig at top, before the credentials.
 ### Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
