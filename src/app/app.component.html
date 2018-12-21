@@ -1,3 +1,23 @@
-<div class="container">
-<router-outlet></router-outlet>
+
+<div class="appBackground" [ngStyle]="{'background' : 'url(../assets/images/annie-spratt-1111925-unsplash.jpg)'}">
+  <div class="container">
+    <div id="appTop">
+      <div class="upperNavBarLeft" id="textSlider">
+        <div class="scroller">
+          <div class="inner">
+            <ul>
+              <li><a href="#">It's Reading Time!</a></li>
+              <li><a href="#">This Week's Book Recommentations</a></li>
+              <li><a href="#">New Features</a></li>
+            </ul>
+          </div>
+        </div>
+        <span class="upperNavBarRight"><a routerLink="members">Member Login &nbsp;</a>&nbsp;<a href="#">Premium &nbsp;</a><a href="#">Community &nbsp;</a><a href="#">Help &nbsp;</a></span>
+      </div>
+      <!-- <div class="upperNavBarRight">
+        <a routerLink="user">Member Login &nbsp;</a>&nbsp;<a href="#">Premium &nbsp;</a><a href="#">Community &nbsp;</a><a href="#">Help &nbsp;</a>
+      </div> -->
+    </div>
+  <router-outlet></router-outlet>
+  </div>
 </div>

@@ -1,10 +1,29 @@
 
 
-<div>
-  <div>
-    <h3>{{(bookToDisplay | async)?.title}}</h3>
-    <h4>{{(bookToDisplay | async)?.author}}</h4>
-    <p>{{(bookToDisplay | async)?.summary}}</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12" id="detailTop">
+
+    </div><br />
+    <div class="col-md-3" id="detailSidebar">
+      <div>
+        <a routerLink="/members">Return Home</a><br />
+        <h1>STUFF STUFF STUFF</h1>
+        <h3>MORE STUFF MORE STUFF</h3>
+      </div>
+      <div>
+        <h2>LOOK AT THIS</h2>
+        <h4>PLACE HOLDER TEXT</h4>
+      </div>
+    </div>
+    <div class="col-md-9" id="detailMain">
+      <div>
+        <div>
+          <h3>{{(bookToDisplay | async)?.title}}</h3>
+          <h4>{{(bookToDisplay | async)?.author}}</h4>
+          <p>{{(bookToDisplay | async)?.summary}}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-<a routerLink="/">Return Home</a>

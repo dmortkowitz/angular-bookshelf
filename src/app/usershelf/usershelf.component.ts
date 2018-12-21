@@ -23,6 +23,6 @@ export class UsershelfComponent implements OnInit {
   }
 
   goToDetailPage(clickedBook) {
-    this.router.navigate(['books', clickedBook.$key]);
+    this.router.navigate(['members/books', clickedBook.$key]);
   };
 }

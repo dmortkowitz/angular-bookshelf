@@ -1,0 +1,35 @@
+#detailTop{
+/* border: 2px solid #000000;
+border-bottom: none;
+border-radius: 15px;
+padding-top: 1%;
+padding-bottom: 1%; */
+border: 1px solid #efeff0;
+background-color: #efeff0;
+/* width: 25%; */
+padding-left: 1%;
+}
+
+#detailSidebar{
+  border-radius: 15px;
+  min-height: 500px;
+  max-height: 1250px;
+  border: 1px solid #efeff0;
+  border-radius: 5px;
+  padding: 5%;
+  background-color: #f8f9fa;
+  overflow: scroll;
+}
+
+
+#detailMain{
+  border-radius: 15px;
+  min-height: 500px;
+  max-height: 1250px;
+  border: 1px solid #efeff0;
+  border-radius: 5px;
+  padding: 5%;
+  background-color: #f8f9fa;
+  overflow: scroll;
+
+}

@@ -1,0 +1,66 @@
+ul {
+  list-style: none;
+}
+.appBackground {
+  background: #edf9ff;
+  min-width: 100%;
+  min-height: 1000px;
+}
+
+#appTop{
+border: 1px solid #efeff0;
+
+/* margin-left: 1.5%; */
+}
+.upperNavBarLeft {
+  background-color: #f8f9fa;
+  /* float: left; */
+  width: 100%;
+  color: white;
+
+
+}
+.upperNavBarRight {
+  background-color: #f8f9fa;
+  font-size: 12px;
+  text-align: right;
+  color: #ffffff;
+  /* padding-left: ; */
+  /* float: right; */
+  position: absolute;
+  top: 2px;
+  right: 10%;
+}
+
+.scroller {
+   height: 14pt;
+   line-height: 18pt;
+   overflow: hidden;
+   font-size: 14px;
+}
+
+.scroller .inner { animation: 8s normal infinite running scroll; }
+@keyframes scroll {
+   0%  	{margin-top: 0px;}
+   15% 	{margin-top: 0px;}
+   25%  {margin-top: -20pt;}
+   40%  {margin-top: -20pt;}
+   50%  {margin-top: -40pt;}
+   65%  {margin-top: -40pt;}
+   75%  {margin-top: -80pt;}
+   95%  {margin-top: -80pt;}
+   100% {margin-top: 0px;}
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+
+a {
+  color: #21282d;
+}

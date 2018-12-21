@@ -1,0 +1,31 @@
+/* label {
+  color: white;
+} */
+
+#userHeader{
+  text-align: center;
+  border: 1px solid #efeff0;
+  background-color: #efeff0;
+  width: 100%;
+  border-radius: 0px;
+}
+.submitText {
+  border: 1px solid #efeff0;
+  background-color: #efeff0;
+  width: 100%;
+  padding-left: 3%;
+}
+.submitBook {
+  border: 1px solid #dfdfdf;
+  background-color: #efeff0;
+  width: 100%;
+  padding-left: 3%;
+}
+
+.returnHome {
+  border: 1px solid #efeff0;
+  background-color: #efeff0;
+  width: 100%;
+  padding-left: 3%;
+  border-radius: 0px;
+}
