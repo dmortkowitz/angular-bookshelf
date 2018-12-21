@@ -33,5 +33,9 @@ export class BookService {
                                 author: localUpdatedBook.author,
                                 summary: localUpdatedBook.summary});
   }
+  // completeBook(localCompletedBook){
+  //   var bookEntryInFirebase = this.getBookById(localCompletedBook.$key);
+  //
+  // }
 
 }
