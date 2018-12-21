@@ -10,25 +10,36 @@
     <div class="submitText">
       <label>Book Title:</label>
       <br>
-      <input #newTitle>
+      <input placeholder="Book Title" #newTitle>
     </div>
 
     <div class="submitText">
       <label>Author:</label>
       <br>
-      <input #newAuthor>
+      <input placeholder="Author(s)" #newAuthor>
+    </div>
+
+    <div class="submitText">
+      <label>Pages:</label>
+      <br>
+      <input placeholder="Number of pages" #newPages>
     </div>
 
     <div class="submitText">
       <label>Book Summary:</label>
       <br>
-      <textarea #newSummary></textarea>
+      <textarea placeholder="Summary Optional" #newSummary></textarea>
     </div>
-    <button class="submitBook" (click)="submitForm(newTitle.value, newAuthor.value, newSummary.value); newTitle.value=''; newAuthor.value=''; newSummary.value=''">Add</button><br />
+    <div class="submitText">
+      <label>Book status:</label>
+      <br>
+      <textarea placeholder="Read, To Be Read, Reading" #newSummary ></textarea>
+    </div>
+    <button class="submitBook" (click)="submitForm(newTitle.value, newAuthor.value, newSummary.value, newPages.value); newTitle.value=''; newAuthor.value=''; newSummary.value=''; newPages.value=''">Add</button><br />
     <div class="returnHome">
       <a routerLink="/members">Return Home</a>
     </div>
-      <p class="submitBook">Please click a title to update an entry.</p>
+      <p class="submitBook">Please click title to update.</p>
   </div>
 
 

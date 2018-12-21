@@ -14,8 +14,8 @@ export class SubmitbookComponent implements OnInit {
 
   ngOnInit() {
   }
-  submitForm(title: string, author: string, summary: string) {
-      var newBook: Book = new Book(title, author, summary);
+  submitForm(title: string, author: string, summary: string, pages: string, status: string) {
+      var newBook: Book = new Book(title, author, summary, pages, status);
       this.bookService.addBook(newBook);
   }
 }
